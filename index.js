@@ -1,9 +1,17 @@
+// This code creates a simple game where the player can click on one of the three buttons (rock, paper, or scissors) to make their selection, the computer having made a random selection. The result of the round (win, lose, or tie) is displayed to the player on a new screen.
+
 (function () {
   const choices = ["rock", "paper", "scissors"];
 
   const getComputerChoice = () => {
     return choices[Math.floor(Math.random() * choices.length)];
   };
+
+  /* This getResult function compares the choices made by the player and the computer against the possible winning combinations. It returns a string indicating the result of the game. 
+  If the player and computer have the same choice, it returns "It's a tie!".
+  If the player has won the game, it returns "You win!".
+  If the player has lost the game, it returns "You lose!".
+  */
 
   const getResult = (playerChoice, computerChoice) => {
     if (playerChoice === computerChoice) {
@@ -18,6 +26,7 @@
       return "You lose!";
     }
   };
+
   // The playGame function gets the player's choice from button.id in the buttons.forEach function, gets the computer's choice using the getComputerChoice function, and calculates the result using the getResult function. It displays the result by adding textContent to the result element.
 
   const playGame = (playerChoice) => {
