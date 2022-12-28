@@ -37,7 +37,7 @@
     ).textContent = `${result} You chose ${playerChoice}, the computer chose ${computerChoice}.`;
   };
 
-  // All the buttons in the game screen are selected and event listeners are added to each. The forEach here does the heavy lifting. It triggers the playGame function and switches from game screen to result screen.
+  // All the buttons in the game screen are selected and event listeners are added to each. The forEach triggers the playGame function and switches from game screen to result screen.
 
   const buttons = document.querySelectorAll("#game button");
   buttons.forEach((button) => {
