@@ -12,7 +12,6 @@
   If the player has won the game, it returns "You win!".
   If the player has lost the game, it returns "You lose!".
   */
-
   const getResult = (playerChoice, computerChoice) => {
     if (playerChoice === computerChoice) {
       return "It's a tie!";
@@ -26,7 +25,6 @@
       return "You lose!";
     }
   };
-
   // The playGame function gets the player's choice from button.id in the buttons.forEach function, gets the computer's choice using the getComputerChoice function, and calculates the result using the getResult function. It displays the result by adding textContent to the result element.
 
   const playGame = (playerChoice) => {
@@ -37,7 +35,7 @@
     ).textContent = `${result} You chose ${playerChoice}, the computer chose ${computerChoice}.`;
   };
 
-  // All the buttons in the game screen are selected and event listeners are added to each. The forEach triggers the playGame function and switches from game screen to result screen.
+  // The three buttons in the game screen are selected and event listeners are added to each. The forEach triggers the playGame function and switches from game screen to result screen by adding and removing the hidden class.
 
   const buttons = document.querySelectorAll("#game button");
   buttons.forEach((button) => {
