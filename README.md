@@ -14,3 +14,6 @@ Choose a weapon by selecting its button and see the outcome on the following scr
 
 That's the whole game. Grok it's hidden depths if you dare.
 Naturally you'll want to repeat the enormity of this experience so a Play Again button is provided for your relief.
+
+### Author
+Hal Katzman ghkedo@airpost.net
