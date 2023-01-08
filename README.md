@@ -1,5 +1,7 @@
 # Rock Paper Scissors
 
+This is my final project for the JavaScript Fundamentals course.
+
 Rock Paper Scissors is a web based, single player game where the player tries to beat the computer by selecting the more powerful weapon.
 
 In the game
